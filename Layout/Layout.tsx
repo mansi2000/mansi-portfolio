@@ -18,22 +18,22 @@ const Layout = ({navbarSx, title ,children ,desc } : ILayout) => {
 
     <>
     <Head >
-        <title>{title || "Vito Medlej Personal Portfolio | Lebanese Web Developer"}</title>
+        <title>{title || "Mansi Bansal Personal Portfolio | Lebanese Web Developer"}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="shortcut icon" href="https://res.cloudinary.com/dwcu3wcol/image/upload/v1657099811/log_nkmcys.jpg" />
   
    
     
-<meta name="description" content={`${desc || 'Vito Medlej personal portfolio, An expert in UI/UX and building complex websites and applications'}`} />
+<meta name="description" content={`${desc || 'Mansi Bansal personal portfolio, An expert in UI/UX and building complex websites and applications'}`} />
 
 
-<meta property="og:title" content="Vito Medlej Personal Portfolio | Lebanese Web Developer" />
+<meta property="og:title" content="Mansi Bansal Personal Portfolio | Lebanese Web Developer" />
 
 
 <meta property="og:url" content="https://elvito.netlify.app" />
 
 
-<meta property="og:description" content="Vito Medlej | Web Developer based in Lebanon. And this is my Portfolio and my blog "/>
+<meta property="og:description" content="Mansi Bansal | Web Developer based in Lebanon. And this is my Portfolio and my blog "/>
 
 
 <meta property="og:image" content="https://res.cloudinary.com/dwcu3wcol/image/upload/v1658929513/log-removebg-preview_fygpsd.png"/>
@@ -48,7 +48,7 @@ const Layout = ({navbarSx, title ,children ,desc } : ILayout) => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     {/* <meta name="description" content="Site Meta Description" /> */}
     <meta name="keywords" content="Personal Portfolio" />
-    <meta name="author" content="Vito Medlej" />
+    <meta name="author" content="Mansi Bansal" />
     <meta name="publisher" content="publisher"/>
     <meta name="copyright" content="copyright"/>
     <meta name="page-topic" content="Web Development | Blog"/>

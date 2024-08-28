@@ -1,7 +1,6 @@
 import {Box} from '@mui/material'
 import type {NextPage}
 from 'next'
-import Experience from '../src/components/Sections/TechTools/TechTools'
 import Hero from '../src/components/Sections/Hero/Hero'
 import Perks from '../src/components/Sections/Perks/Perks'
 import Projects from '../src/components/Sections/Projects/Projects';
@@ -21,7 +20,7 @@ const Home : NextPage = ({projectsArray, iconsArray} : any) => {
 
     }, [])
     return (
-        <Layout desc={`Vito Medlej, A lebanese professional software engineer in Beirut, Can develop all kinds of websites and web/mobile applications according to your needs`} title='Vito Medlej Fullstack Developer Personal Portfolio Website'>
+        <Layout desc={`Mansi Bansal, A lebanese professional software engineer in Beirut, Can develop all kinds of websites and web/mobile applications according to your needs`} title='Mansi Bansal Fullstack Developer Personal Portfolio Website'>
 
             <Box
                 sx={{
@@ -31,7 +30,6 @@ const Home : NextPage = ({projectsArray, iconsArray} : any) => {
 
                 <Hero/>
                 <Perks/>
-                <Experience iconsArray={iconsArray}/>
                 <Projects projectsArray={projectsArray}/>
                 <About/>
                 <CTA/>

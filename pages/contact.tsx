@@ -69,7 +69,7 @@ const Contact = () => {
 
     return (
         <Layout
-            title='Vito Medlej contact page'
+            title='Mansi Bansal contact page'
             desc='If you have questions or need help you can contact me at vito.medlej@gmail.com | Or Send a Message through the form.'>
 
             <Box sx={{

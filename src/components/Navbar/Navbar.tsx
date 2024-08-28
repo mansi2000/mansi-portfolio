@@ -60,13 +60,7 @@ const Navbar = ({toggleDrawer,navbarSx} : INavbar) => {
                 maxWidth="lg">
 
                 <Logo color={color} toggleDrawer={toggleDrawer} colorMode={colorMode}/>
-                <Button 
-                onClick={()=>router.push('/blog')}
-                sx={{mr:'1em',fontWeight:'500',':hover':{color:'#0092ff'},color:color}}>
-                    {/* <Typography> */}
-                    Blog
-                    {/* </Typography> */}
-                </Button>
+                
                 <IconButton
                     sx={{
                     color,
