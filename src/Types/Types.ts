@@ -57,14 +57,14 @@ export interface IDrawerItem {
     toggleDrawer : (state?: boolean) => void
 }
 
-export interface img {
+export interface Image {
     url : string;
     title : string;
 }
 
 export interface IProjects {
 
-    img : string;
+    img : Image;
     title : string;
     siteUrl : string;
     repoUrl : string;
