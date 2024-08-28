@@ -94,7 +94,7 @@ const About = () => {
                                 sm: '1em'
                             }
                         }}>
-                      A 20-year-old Lebanon-based software developer. I first started developing games using Unity3D, but soon realized I preferred web and mobile app development, and I&apos;ve been building and working on that for the past 3 years now.
+                      A Computer Science Graduate with 3 years work experience at Hewlett-Packard. I first started developing AR/VR apps using Unity3D, but soon realized I preferred web and mobile app development, and I&apos;ve been building and working on that for the past 6 years now.
 
                         </Typography>
                     </Box>
@@ -108,11 +108,11 @@ const About = () => {
                             },
                             pb:'.5em'
                         }}>
-                      Being self-taught made me appreciate education; thus, I&apos;m studying Management Information Systems simultaneously. Business and technology are both my passions.
+                      Building new things made me appreciate entreprenuership; thus, I&apos;m building a Music Company simultaneously. Music and technology are both my passions.
 
                         </Typography>
                     <ReadMore>
-                    Aside from working hard, I tend to enjoy simple things like reading, petting cats, hitting the gym, and other things we humans do. If any of what I said seems interesting, then please do not hesitate to send me a message.
+                    Aside from working hard, I tend to enjoy simple things like swimming, petting cats, and other things we humans do. If any of what I said seems interesting, then please do not hesitate to send me a message.
                     </ReadMore>
                 </Grid>
             </Grid>

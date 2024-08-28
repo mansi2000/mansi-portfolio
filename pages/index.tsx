@@ -20,7 +20,7 @@ const Home : NextPage = ({projectsArray, iconsArray} : any) => {
 
     }, [])
     return (
-        <Layout desc={`Mansi Bansal, A lebanese professional software engineer in Beirut, Can develop all kinds of websites and web/mobile applications according to your needs`} title='Mansi Bansal Fullstack Developer Personal Portfolio Website'>
+        <Layout desc={`Mansi Bansal, A professional software engineer in Delhi, Can develop all kinds of websites and web/mobile applications according to your needs`} title='Mansi Bansal Fullstack Developer Personal Portfolio Website'>
 
             <Box
                 sx={{
@@ -58,59 +58,49 @@ export async function getStaticProps() {
     }
     try {
         // first, grab our Contentful keys from the .env file
-        const space = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
-        const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
-
+        
+        const space = '2ggju1yoefwf';
+        const accessToken = 'xYSlv70bf8oWeaPvQtg8c_E7EGfDcXZrEe-io0yVOKA';
+        
         // then, send a request to Contentful (using the same URL from GraphiQL)
         const res =    await fetch(`https://graphql.contentful.com/content/v1/spaces/${space}`, {
-            method: 'POST', // GraphQL *always* uses POST requests!
+            method: 'POST',
             headers: {
                 'content-type': 'application/json',
-                authorization: `Bearer ${accessToken}`, // add our access token header
+                authorization: `Bearer ${accessToken}`,
             },
-            // send the query we wrote in GraphiQL as a string
             body: JSON.stringify({
-                // all requests start with "query: ", so we'll stringify that for convenience
                 query: `
-                {
-                  projectCollection {
-                    items {
-                      title
-                      repoUrl
-                      siteUrl
-                      description
-                      img
+                    {
+                        projectsCollection {
+                            items {
+                                title
+                                desc
+                                img { url title }
+                                repoUrl
+                                siteUrl
+                            }
+                        }
                     }
-                  }
-                  iconsCollection {
-                    items {
-                      filter
-                      svg
-                      title
-                      isBackend
-                    }
-                  }
-                }
-                
-                  `
-            })
+                `,
+            }),
+              redirect: "follow"
         },);
 
+        console.log(res);
+
         // grab the data from our response
-        const {data} = await res.json()
+        const data = await res.json()
+
+
         // const data :any = {}
-        if (!data || data?.length < 1) {
+        if (!data || data?.length < 1 || data.data.projectsCollection.items.length < 1) {
             throw 'Error fetching data'
         }
-        let iconsArray = []
-        for (let i = 0; i < data?.iconsCollection?.items.length; i++) {
-            let clearedIcon = removeEmpty(data?.iconsCollection.items[i])
-            iconsArray.push(clearedIcon)
-        }
+
         return {
             props: {
-                projectsArray: data?.projectCollection.items,
-                iconsArray
+                projectsArray: data.data.projectsCollection.items,
             }
         }
     } catch (err) {

@@ -33,7 +33,7 @@ const Layout = ({navbarSx, title ,children ,desc } : ILayout) => {
 <meta property="og:url" content="https://elvito.netlify.app" />
 
 
-<meta property="og:description" content="Mansi Bansal | Web Developer based in Lebanon. And this is my Portfolio and my blog "/>
+<meta property="og:description" content="Mansi Bansal | Web Developer based in Delhi. And this is my Portfolio and my blog "/>
 
 
 <meta property="og:image" content="https://res.cloudinary.com/dwcu3wcol/image/upload/v1658929513/log-removebg-preview_fygpsd.png"/>

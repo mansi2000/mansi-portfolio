@@ -56,13 +56,19 @@ export interface IDrawerItem {
     url : string;
     toggleDrawer : (state?: boolean) => void
 }
+
+export interface img {
+    url : string;
+    title : string;
+}
+
 export interface IProjects {
 
     img : string;
     title : string;
     siteUrl : string;
     repoUrl : string;
-    description : string;
+    desc : string;
 
 }
 export interface IProjectCard extends IProjects {

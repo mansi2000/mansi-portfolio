@@ -70,7 +70,7 @@ const Contact = () => {
     return (
         <Layout
             title='Mansi Bansal contact page'
-            desc='If you have questions or need help you can contact me at vito.medlej@gmail.com | Or Send a Message through the form.'>
+            desc='If you have questions or need help you can contact me at mansibansal2000@gmail.com | Or Send a Message through the form.'>
 
             <Box sx={{
                 overflowX: 'hidden'
@@ -250,18 +250,18 @@ const Contact = () => {
                         }}>
 
                             <ContactBox 
-                            href='mailto:vito.medlej@gmail.com'
+                            href='mailto:mansibansal2000@gmail.com'
                             target='_blank'
-                            t1='Get in touch' t2='Email Address' t3='vito.medlej@gmail.com'/>
+                            t1='Get in touch' t2='Email Address' t3='mansibansal2000@gmail.com'/>
                             <ContactBox 
-                            href={`https://www.google.com/maps/place/Lebanon/data=!4m2!3m1!1s0x151f17028422aaad:0xcc7d34096c00f970?sa=X&ved=2ahUKEwiK1JSG9or9AhXfUaQEHdUJC40Q8gF6BAgIEAI`}
+                            href={`https://www.google.com/maps/place`}
                             target='_blank'
                             t1='Location'
-                             t2='Currently living in' t3='Lebanon/Beirut'/>
+                             t2='Currently living in' t3='India/Delhi'/>
                             <ContactBox 
                             target='_blank'
-                            href={'https://wa.me/96181826445'}
-                            t1='Contact Directly ' t2='Phone Number' t3='+961/ 81826445'/>
+                            href={'https://wa.me/+919953359227'}
+                            t1='Contact Directly ' t2='Phone Number' t3='+91 9953359227'/>
                         </Box>
                     </Box>
                     <SocialMedia/>

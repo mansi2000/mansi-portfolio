@@ -1,7 +1,6 @@
 import type {AppProps}
 from 'next/app'
 import '../styles/styles.css';
-import './blog/blog.css'
 import {ThemeProvider} from '@emotion/react'
 import {createTheme} from "@mui/material"
 import {createContext, useMemo, useState} from 'react'

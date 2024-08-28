@@ -92,10 +92,10 @@ function Footer() {
                     <Grid item xs={12} sm={3} md={3}>
                         <Typography variant='h1' fontSize='1.4em' fontWeight='400'>Contact</Typography>
                         <Box className='link' sx={styles}>
-                            <a target='_blank' rel="noreferrer" href='https://github.com/VitoMedlej'>Github</a>
-                            <Typography variant='h1' fontSize='1em'>vito.medlej@gmail.com</Typography>
-                            <Typography variant='h1' fontSize='1em'>Lebanon/Beirut</Typography>
-                            <Typography variant='h1' fontSize='1em'>+961/81826445</Typography>
+                            <a target='_blank' rel="noreferrer" href='https://github.com/mansi2000'>Github</a>
+                            <Typography variant='h1' fontSize='1em'>mansibansal2000@gmail.com</Typography>
+                            <Typography variant='h1' fontSize='1em'>India/Delhi</Typography>
+                            <Typography variant='h1' fontSize='1em'>+91 9953359227</Typography>
                         </Box>
                     </Grid>
                 </Grid>

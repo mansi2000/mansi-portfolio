@@ -10,7 +10,7 @@ const ProjectCard = ({
     repoUrl,
     siteUrl,
     title,
-    description
+    desc
 } : IProjectCard) => {
 
     const ref = useRef(null);
@@ -67,21 +67,12 @@ const ProjectCard = ({
                 position: 'relative'
             }}>
 
-                <img alt='Project Image' className='img1' src={`${img}`}/>
+            <img alt='Project Image' className='img1' src={img.url} />
             </Box>
             <Box
                 ref={ref}
                 onMouseMove={onMouseMove}
                 sx={{
-                transition: ' all .1s ease',
-                '&:hover': {
-                    transform: {
-                        xs: ` translateY(-25%)`,
-                        md: `${rotation} ${isReversed
-                            ? 'translateX(-25%)'
-                            : 'translateX(25%)'}`
-                    }
-                },
                 borderRadius: '6px',
                 width: {
                     xs: '94%',
@@ -126,7 +117,7 @@ const ProjectCard = ({
                         },
                         fontWeight: '300'
                     }}>
-                        {description}
+                        {desc}
                     </Typography>
                     <Box
                         sx={{

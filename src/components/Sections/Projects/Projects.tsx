@@ -97,7 +97,7 @@ const Projects = ({projectsArray} : IProjects[] | any) => {
                                     repoUrl={project.repoUrl}
                                     title={project.title}
                                     img={project.img}
-                                    description={project.description}
+                                    desc={project.desc}
                                     key={project.title}/>
                             })
 
