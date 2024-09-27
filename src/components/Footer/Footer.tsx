@@ -66,7 +66,7 @@ function Footer() {
                         <Box sx={styles}>
                             <Typography variant='h3' fontSize='1em'>
                                 Hi, my name is Mansi Bansal with 6+ years of web and app development expertise.  
-                                Get your stellar website made by me – let's bring your vision to life!
+                                Get your stellar website made by me – let&apos;s bring your vision to life!
                             </Typography>
                         </Box>
 
