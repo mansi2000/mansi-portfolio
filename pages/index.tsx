@@ -29,8 +29,8 @@ const Home : NextPage = ({projectsArray, iconsArray} : any) => {
             }}>
 
                 <Hero/>
-                <Perks/>
                 <Projects projectsArray={projectsArray}/>
+                <Perks/>
                 <About/>
                 <CTA/>
 

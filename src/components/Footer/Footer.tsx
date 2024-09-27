@@ -65,9 +65,8 @@ function Footer() {
 
                         <Box sx={styles}>
                             <Typography variant='h3' fontSize='1em'>
-                                Hi, my name is Mansi Bansal and I have created the OnBeirut Agency which aims to solve various issues small lebanese
-                                businesses face. You are free to use the website as a template for yourself as long as you
-                                give credit.
+                                Hi, my name is Mansi Bansal with 6+ years of web and app development expertise.  
+                                Get your stellar website made by me – let's bring your vision to life!
                             </Typography>
                         </Box>
 

@@ -87,7 +87,8 @@ const Projects = ({projectsArray} : IProjects[] | any) => {
                     }}>
 
                         {projectsArray
-                            ? projectsArray.map((project : any, index : number) => {
+                            ? projectsArray.slice() // to avoid mutating the original array
+                            .reverse().map((project : any, index : number) => {
                                 return <ProjectCard
                                     className={`p${index}`}
                                     isReversed={index % 2 === 0

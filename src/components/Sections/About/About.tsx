@@ -83,7 +83,7 @@ const About = () => {
                             }
                         }}
                             fontWeight='600'>
-                            About Me, Im Mansi Bansal
+                            Hello! I&apos;m Mansi Bansal
                         </Typography>
                         <Typography
                             variant='h2'
@@ -94,7 +94,7 @@ const About = () => {
                                 sm: '1em'
                             }
                         }}>
-                      A Computer Science Graduate with 3 years work experience at Hewlett-Packard. I first started developing AR/VR apps using Unity3D, but soon realized I preferred web and mobile app development, and I&apos;ve been building and working on that for the past 6 years now.
+                      A Computer Science Engineer with prior experience at Hewlett-Packard and NetApp, Bangalore. I first started developing AR/VR apps using Unity3D, but soon realized I preferred web and mobile app development, and I&apos;ve been building and working on that for the past 6 years now.
 
                         </Typography>
                     </Box>

@@ -84,7 +84,7 @@ const CTA = () => {
 
                      
                         <Button
-                            onClick={()=>router.push('/contact')}
+                            onClick={() => window.location.href = 'https://wa.me/+919953359227'}
                             className='ctabtn'
                             sx={{
                             color: 'white',
